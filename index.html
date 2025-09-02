@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MazeRat</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="game-header">
+            <h1>MazeRat</h1>
+            <div id="game-controls">
+                <label for="difficulty">Difficulty:</label>
+                <select id="difficulty">
+                    <option value="easy" selected>Easy</option>
+                    <option value="hard">Hard</option>
+                </select>
+                <button id="mute-btn" title="Toggle Music">🔊</button>
+                <button id="debug-btn" title="Show Victory (Debug)">🏆</button>
+                <div id="timer">00:00</div>
+            </div>
+        </div>
+        <canvas id="game-canvas"></canvas>
+        <div id="instructions">
+            Use arrow keys to navigate the maze
+        </div>
+    </div>
+    
+    <script src="js/audio.js"></script>
+    <script src="js/assets.js"></script>
+    <script src="js/assetData.js"></script>
+    <script src="js/maze.js"></script>
+    <script src="js/renderer.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
